@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // 1-3: Full Name
+        let firstName = "Lena";
+        console.log(firstName);
+        let lastName = "Naroushvili";
+        console.log(lastName);
+        const fullName = firstName + " " + lastName;
+        console.log(fullName);
+
+        // 4: Birth Year
+        const dateOfBirth = 2008;
+        console.log(`მე დავიბადე ${dateOfBirth} წელს.`);
+
+        // 5: Age Calculation
+        let currentYear = new Date().getFullYear();
+        let calculateAge = currentYear - dateOfBirth;
+        console.log(calculateAge);
+
+        // 6: Number Check
+        let checkNumber = 0;
+        console.log(checkNumber > 0 ? "Positive" : checkNumber < 0 ? "Negative" : "Zero");
+
+        // 7: Weather Check (Handling Case Sensitivity)
+        let weather = prompt("რა ამინდია ახლა? (მზიანი, წვიმიანი, თოვლიანი, ნისლიანი)").toLowerCase();
+
+        if (weather === "მზიანი") {
+            console.log("ცხელა! მზის სათვალე არ დაგავიწყდეს! 😎");
+        } else if (weather === "წვიმიანი") {
+            console.log("ჭექა-ქუხილია! ქოლგა წაიღე! ☔");
+        } else if (weather === "თოვლიანი") {
+            console.log("ყინავს. თბილად ჩაიცვი! ❄️");
+        } else if (weather === "ნისლიანი") {
+            console.log("ფრთხილად იყავი, გზაზე ცუდი ხილვადობაა! 🌫️");
+        } else {
+            console.log("ასეთი ამინდი არ არსებობს.");
+        }
+    </script>
+  </body>
+</html>
